@@ -231,6 +231,18 @@
       50% { opacity: 1; }
       100% { opacity: 0.4; }
     }
+  
+header { gap: .75rem; flex-wrap: wrap; }
+header h1 { font-size: clamp(1.2rem, 4vw, 1.8rem); letter-spacing: -.035em; }
+.toolbar { flex-wrap: wrap; gap: .625rem; }
+.tool-group { flex-wrap: wrap; gap: .375rem; }
+.toolbar .btn { min-height: 44px; }
+.btn:focus-visible, input:focus-visible { outline: 2px solid #90b8ff; outline-offset: 3px; }
+@media (max-width: 520px) {
+  .container { padding-inline: .75rem; }
+  .shortcuts-bar { flex-wrap: wrap; gap: .5rem; }
+}
+
   </style>
 </head>
 <body>
